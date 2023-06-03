@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+block style 
+  style
+      include ../static/style.css
+block content 
+  section#introsection 
+        div Welcome to My Dance Academy 
+        div.small Eat Sleep Dance Repeat 
+  section#missionsection 
+        div Our Mission
+        div.cards
+            h3 Node Dance
+            div.card-box   
+              div.card-img
+                img(src="/static/cardlogo.jpg",alt="pic")
+              div.card-content 
+                 | This a sample box for missions of a dance academy.
+        div.cards
+            h3 Express Dance
+            div.card-box   
+              div.card-img
+                img(src="/static/cardlogo.jpg",alt="pic")
+              div.card-content 
+                 | This a sample box for missions of a dance academy.
+        div.cards
+            h3 Mongo Dance
+            div.card-box   
+              div.card-img
+                img(src="/static/cardlogo.jpg",alt="pic")
+              div.card-content
+                | This a sample box for missions of a dance academy.
+  section#sponsorsection 
+        h2  Our Sponsors  
+        div#sponsors
+          img(src="/static/download (1).png",alt="logo", class="spImage")
+          img(src="/static/download (2).png",alt="logo", class="spImage" )
+          img(src="/static/download (3).png",alt="logo", class="spImage" )
